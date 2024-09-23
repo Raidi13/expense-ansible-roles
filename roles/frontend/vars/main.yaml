@@ -1,1 +1,3 @@
 BACKEND_HOST: backend.aws-dev-rk.online
+app_location: /usr/share/nginx/html
+component: frontend
