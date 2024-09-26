@@ -1,8 +1,8 @@
 - name:  configure mysql server
-  hosts: mysql.aws-dev-rk.online
-  become: yes
+  hosts: mysql
+  become: yes # remote
   vars_files:
-  - /var/expense/credentials_mysql.yaml
+  - /var/expense/credentials_mysql.yaml # anslible server
   roles:
   - mysql
 
