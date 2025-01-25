@@ -5,6 +5,3 @@
   - /var/expense/credentials_mysql.yaml # anslible server
   roles:
   - mysql
-
-
-  
