@@ -1,2 +1,4 @@
-# mysql_root_password: ExpenseApp@1
-# login_hosts: mysql.aws-dev-rk.online
+ mysql_root_password: ExpenseApp1
+ login_hosts: mysql.aws-dev-rk.online
+ app_location: /app
+ component: backend

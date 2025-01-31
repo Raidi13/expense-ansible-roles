@@ -1,0 +1,11 @@
+# we need pass 2 varibles
+  #1. component
+  #2. environment
+
+- name:  "configure {{ component }} server"
+  hosts: all
+  become: yes # remote
+  vars_files:
+  - "variables-{{ enivronment }}.yaml" # anslible server
+  roles:
+  - " {{ component }}"
