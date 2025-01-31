@@ -34,12 +34,12 @@
       tasks_from: app-pre-req
 
   
-   - name: install dependencies
-     tags:
-     deployment # topic : tags in future if the version is updated to v3 we need to menction tags to auto upgrade
+  - name: install dependencies
+    tags:
+      deployment # topic : tags in future if the version is updated to v3 we need to menction tags to auto upgrade
     ansible.builtin.command: npm install
     args:
-      chdir: /app
+    chdir: /app
 
   - name: copy.backend service
     ansible.builtin.template: # copy only works for files without varibles
